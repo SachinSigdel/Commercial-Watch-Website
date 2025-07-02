@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Gurkha Rifle Watch" description="E-commerce watch website">
+  <meta name="Author" description="Naitik Rijal">
+  <link rel="stylesheet" href="../css/style.css">
+<title>About Us</title>
+  <style>
+   body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+}
+
+.heading-container {
+    text-align: center;
+    padding: 40px 10px;
+    background-color: #eaeaea;
+    color: black;
+    position: relative;
+}
+
+.heading-container h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.team-section {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.team-member img {
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.black-section {
+    background-color: black;
+    color: black;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cv-btn {
+    margin-top: 15px;
+    border: 1px solid;
+    background: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    max-width: 40%;
+    border: 1px solid;
+    padding: 20px;
+}
+
+.header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid black;
+            padding-bottom: 10px;
+        }
+        .header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        .header img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        h2 {
+            font-size: 22px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+  </style>
+</head>
+<body>
+    <header>
+        <h3>Gurkha Rifle Watch</h3>
+      </header>
+      
+      <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="Gurkha Khukuri Logo" height="200">
+        </div>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./products.html">Product</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./research.html">Research</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+  <div class="heading-container">
+    <h1>About Us</h1>
+<div class="team-section">
+  <div class="team-member" onclick="openCV('cvSantosh')">
+    <img src="../images/santosh.jpeg" alt="Santosh Mukhiya">
+    <h3>Santosh Mukhiya</h3>
+    <p>Team Leader</p>
+    <button class="cv-btn">Show CV</button>
+  </div>
+  <div class="team-member" onclick="openCV('cvSachin')">
+    <img src="../images/sachin.jpeg" alt="Sachin Sigdel">
+    <h3>Sachin Sigdel</h3>
+    <p>Team Member</p>
+    <button class="cv-btn">Show CV</button>
+  </div>
+  <div class="team-member" onclick="openCV('cvNaitik')">
+    <img src="../images/naitik.jpeg" alt="Naitik Rijal">
+    <h3>Naitik Rijal</h3>
+    <p>Team Member</p>
+    <button class="cv-btn">Show CV</button>
+  </div>
+  <div class="team-member" onclick="openCV('cvBishwash')">
+    <img src="../images/bishwash.jpeg" alt="Prijal Dangal">
+    <h3>Prijal Dangal</h3>
+    <p>Team Member</p>
+    <button class="cv-btn">Show CV</button>
+  </div>
+  <div class="team-member" onclick="openCV('cvRaghunath')">
+    <img src="../images/raghu.jpeg" alt="Raghunath Budaperthi">
+    <h3>Raghunath Budaperthi</h3>
+    <p>Team Member</p>
+    <button class="cv-btn">Show CV</button>
+  </div>
+</div>
+</div>
+
+<div id="cvSantosh" class="cv-modal">
+  <div class="cv-content">
+    <span class="close" onclick="closeCV('cvSantosh')">&times;</span>
+    <div class="header">
+      <h1>Santosh Mukhiya</h1>
+      <img src="../images/santosh.jpeg" alt="Santosh's Photo">
+  </div>
+
+  <div class="section">
+      <h2>Student</h2>
+      <p>B.Sc. in Computing with AI</p>
+  </div>
+
+  <div class="section">
+      <h2>Education</h2>
+      <table>
+          <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+          </tr>
+          <tr>
+              <td>NEB +2</td>
+              <td>Columbus Higher Secondary School</td>
+          </tr>
+          <tr>
+              <td>BSc Hons Computing with AI</td>
+              <td>Islington College</td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="section">
+      <h2>Skillset</h2>
+      <ul style="text-align: left;">
+        <li>Communication in english,
+        hindi,nepali </li>
+        <li>Excel</li>
+        <li>Intermediate coding in
+        javascript,c,c++
+        ,python</li>
+        <li>Time Management</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Experience</h2>
+      <ul style="text-align: left;">
+          <li>CSR intern at ING skill academy</li>
+      </ul>
+  </div>
+  </div>
+</div>
+<div id="cvSachin" class="cv-modal">
+  <div class="cv-content">
+    <span class="close" onclick="closeCV('cvSachin')">&times;</span>
+    <div class="header">
+      <h1>Sachin Sigdel</h1>
+      <img src="../images/sachin.jpeg" alt="Sachin's Photo">
+  </div>
+
+  <div class="section">
+      <h2>Student</h2>
+      <p>B.Sc. in Computing with AI</p>
+  </div>
+
+  <div class="section">
+      <h2>Education</h2>
+      <table>
+          <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+          </tr>
+          <tr>
+              <td>SEE</td>
+              <td>Lincoln International School</td>
+          </tr>
+          <tr>
+              <td>NEB +2</td>
+              <td>St. Lawrence College</td>
+          </tr>
+          <tr>
+              <td>BSc Hons Computing with AI</td>
+              <td>Islington College</td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="section">
+      <h2>Skillset</h2>
+      <ul style="text-align: left;">
+          <li>Basics in HTML, Java, and CSS</li>
+          <li>SQL and Database</li>
+          <li>Microsoft Office Package</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Languages</h2>
+      <ul style="text-align: left;">
+          <li>Nepali</li>
+          <li>English</li>
+          <li>German</li>
+          <li>Hindi</li>
+      </ul>
+  </div>
+  </div>
+</div>
+<div id="cvNaitik" class="cv-modal">
+  <div class="cv-content">
+    <span class="close" onclick="closeCV('cvNaitik')">&times;</span>
+    <div class="header">
+      <h1>Naitik Rijal</h1>
+      <img src="../images/naitik.jpeg" alt="Naitik's Photo">
+  </div>
+
+  <div class="section">
+      <h2>Student</h2>
+      <p>B.Sc. in Computing with AI</p>
+  </div>
+
+  <div class="section">
+      <h2>Education</h2>
+      <table>
+          <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+          </tr>
+          <tr>
+              <td>SEE</td>
+              <td>Daffodil Boarding School</td>
+          </tr>
+          <tr>
+              <td>NEB +2</td>
+              <td>Global School of Science</td>
+          </tr>
+          <tr>
+              <td>BSc Hons Computing with AI</td>
+              <td>Islington College</td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="section">
+      <h2>Skillset</h2>
+      <ul style="text-align: left;">
+          <li>Basics in HTML, Java, and CSS</li>
+          <li>Graphic Designing</li>
+          <li>Basics in Data Visualization</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Hobbies</h2>
+      <ul style="text-align: left;">
+          <li>Listening to songs and playing guitar</li>
+          <li>Writing</li>
+          <li>Watching movies (Cinephile)</li>
+      </ul>
+  </div>
+  </div>
+</div>
+<div id="cvBishwash" class="cv-modal">
+  <div class="cv-content">
+    <span class="close" onclick="closeCV('cvBishwash')">&times;</span>
+    <div class="header">
+      <h1>Prijal Dangal</h1>
+      <img src="../images/bishwash.jpeg" alt="Prijal's Photo">
+  </div>
+
+  <div class="section">
+      <h2>Student</h2>
+      <p>B.Sc. in Computing with AI</p>
+  </div>
+
+  <div class="section">
+      <h2>Education</h2>
+      <table>
+          <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+          </tr>
+          <tr>
+              <td>BSc Hons Computing with AI</td>
+              <td>Islington College</td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="section">
+      <h2>Skillset</h2>
+      <ul style="text-align: left;">
+          <li>Motion Designing</li>
+          <li>Graphic Designing</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Hobbies</h2>
+      <ul style="text-align: left;">
+          <li>Listening to music</li>
+          <li>Travelling</li>
+          <li>Playing Basketball</li>
+      </ul>
+  </div>
+  </div>
+  </div>
+</div>
+<div id="cvRaghunath" class="cv-modal">
+  <div class="cv-content">
+    <span class="close" onclick="closeCV('cvRaghunath')">&times;</span>
+    <div class="header">
+      <h1>Raghunath Budaperthi</h1>
+      <img src="../images/raghu.jpeg" alt="Raghunath's Photo">
+  </div>
+
+  <div class="section">
+      <h2>Student</h2>
+      <p>B.Sc. in Computing with AI</p>
+  </div>
+
+  <div class="section">
+      <h2>Education</h2>
+      <table>
+          <tr>
+              <th>Degree</th>
+              <th>Institution</th>
+          </tr>
+          <tr>
+              <td>BSc Hons Computing with AI</td>
+              <td>Islington College</td>
+          </tr>
+      </table>
+  </div>
+
+  <div class="section">
+      <h2>Skillset</h2>
+      <ul style="text-align: left;">
+          <li>Basics in HTML, Java, and CSS</li>
+          <li>Software development, Problem-solving, and Team
+            collaboration</li>
+          <li>Experienced in building scalable, user-friendly applications with a
+            focus on performance and usability.</li>
+      </ul>
+  </div>
+
+  <div class="section">
+      <h2>Experience</h2>
+      <ul style="text-align: left;">
+          <li>Intern at Ing Tech / Kathmandu / October, 2024 - Present</li>
+      </ul>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="form">
+    <div style="text-align: center; display: block;">
+        <h1>Contact Us</h1>
+        <p>Contact us through the form.<br> Or e-mail us at example@gmail.com.</p>
+    </div>
+    <form onsubmit="validate_form()" name="contact_us">
+        <label>First Name:</label><input type="text" name="fname">
+        <label>Last Name:</label><input type="text" name="lname">
+        <label>Email:</label><input type="email" name="email" placeholder="example@gmail.com">
+        <label>Message:</label><textarea name="message" rows="7"></textarea>
+        <input class="cv-btn" type="submit" name="submit" style="max-width: 15%;">
+    </form>
+</div>
+
+<footer>
+    <div class="footer">
+        <div>
+            <img src="../images/footerlogo.png" width="150px" height="100px">
+            <h1>Gurkha Rifle Watches</h1><br>
+        </div>
+            
+        <ul class="footer_nav">
+          <li><h3>Menu</h3></li><hr width="100px">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./products.html">Product</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./research.html">Research</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+            <p style="max-width: 40%; text-align: center; line-height: 2;">The Gurkha Rifle Watch collection embodies the resilience, precision, and legacy of the legendary Gurkha soldiers. Each timepiece is a tribute to their bravery, crafted with meticulous attention to detail and built to withstand the toughest conditions.</p>
+    </div>
+    <h3 class="copyright">&copy; Gurkha Rifle Watch</h3>
+</footer>
+
+<style>
+.cv-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+</style>
+
+
+<script>
+  function openCV(id)  {
+    document.getElementById(id).style.display = "flex";
+  }
+
+  function closeCV(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  function validate_form() {
+            var fname = document.forms['contact_us']['fname'].value;
+            var lname = document.forms['contact_us']['lname'].value;
+            var email = document.forms['contact_us']['email'].value;
+            var message = document.forms['contact_us']['message'].value;
+            if(fname == '' ) {
+                alert("First name shouldn't be empty!");
+            }
+            else if(lname == '' ) {
+                alert("Last name shouldn't be empty!");
+            }
+            else if(email == '' ) {
+                alert("Email shouldn't be empty!");
+            }
+            else if(message == '' ) {
+                alert("Message box shouldn't be empty!");
+            }
+            else {
+                alert("We'll get back to you soon.");
+            }
+        }
+</script>
+</body>
+</html>

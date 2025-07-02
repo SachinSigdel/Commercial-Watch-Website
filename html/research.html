@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Research and Analysis</title>
+    <meta name="Description" content="Research">
+    <meta name="keywords" content="Gurkha" />
+    <meta name="author" content="Islington" />
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        /* css for all element */
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        .research {
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* css for Header of page */
+        h1 {
+            width: fit-content;
+            padding: 5px;
+            text-align: center;
+            text-decoration: underline;
+            text-underline-offset: 10px;
+            text-decoration-thickness: 3.1px;
+        }
+
+        /* inner container that contain table */
+        .inner-container {
+            margin-top: 30px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 0 30px;
+        }
+
+         /* css for header table*/
+        th:nth-child(1),
+        th:nth-child(3) {
+            width: 40%;
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        th:nth-child(2) {
+            width: 10%;
+        }
+
+        td:nth-child(1),
+        td:nth-child(3) {
+            width: 40%;
+            padding: 10px;
+        }
+
+        td:nth-child(2) {
+            width: 10%;
+            position: relative;
+            column-span: 5;
+        }
+
+        /* Table section divider css */
+        .research section.divider .straight-line {
+            width: 1px;
+            height: 900px;
+            color: black;
+            position: absolute;
+            right: 50%;
+            top: 5%;
+            border-right: 1px solid black;
+
+        }
+
+        .research section.divider .straight-line::after {
+            content: "VS";
+            padding: 0.5px 10px;
+            border: 1px solid black;
+            border-radius: 15px;
+            background-color: white;
+            position: absolute;
+            top: 25%;
+            right: -21px;
+        }
+
+        .card {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .img-container {
+            width: 40%;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 0px 0px 8px 1px rgb(177, 173, 173);
+        }
+
+        .img-container img:hover {
+            transform: scale(1.1);
+        }
+
+
+        .text-container {
+            width: 50%;
+        }
+
+        .research .text-container h6 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: black;
+
+        }
+
+        .research .text-container a {
+            text-decoration: none;
+        }
+
+
+        .research .text-container h6:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: text-decoration 2s;
+        }
+
+        .research .text-container p {
+           text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Gurkha Rifle Watch</h3>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <img src="../images/logo.png" alt="Gurkha Khukuri Logo" height="200">
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./products.html">Product</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./research.html">Research</a></li>
+            <li><a href="./about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <!-- Container for Research Page -->
+    <section class="research">
+        <div class="inner-container">
+            <!-- Table -->
+            <table style="width: 100%;">
+                <!-- Header -->
+                <thead>
+                    <th>Our Website</th>
+                    <th></th>
+                    <th> Reference Website </th>
+                </thead>
+                <tbody>
+                    <!-- Product Page description -->
+                    <tr>
+                        <td>
+                            <div class="left">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="./products.html" target="_blank">
+                                            <img src="../images/product.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="./products.html">
+                                            <h6>Product Page</h6>
+                                        </a>
+                                        <p>
+                                            Our product list page design takes inspiration from Myntra's approach. We
+                                            appreciate their
+                                            clean and user-friendly interface, which effectively presents a diverse
+                                            range of products
+                                            while maintaining visual appeal.I have taken a design reference from a
+                                            product page of a website to build my college project website. The product
+                                            page provided valuable insights into structuring an engaging and
+                                            user-friendly layout. By referring to this page, I was able to incorporate
+                                            key design elements such as clear product displays, intuitive navigation,
+                                            and an appealing visual hierarchy. It helped me understand how to
+                                            effectively use images, typography, and color schemes to enhance the overall
+                                            user experience.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <section class="divider">
+                                <div class="straight-line"></div>
+                            </section>
+                        </td>
+                        <td>
+                            <div class="right">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="https://www.myntra.com/watch?rawQuery=watch" target="_blank">
+                                            <img src="../images/productpagereference.jpeg" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="https://www.myntra.com/watch?rawQuery=watch">
+                                            <h6>Myntra Website</h6>
+                                        </a>
+                                        <p>
+                                            The Myntra Product Page typically showcases a specific watch model from
+                                            their catalog. It provides essential details like the watch's price,
+                                            available color options, and customer reviews to help potential buyers make
+                                            informed purchasing
+                                            decisions.The referenced product page is well-structured and focuses on
+                                            providing a seamless shopping experience. It includes essential features
+                                            like high-quality product images, detailed descriptions, pricing
+                                            information, and customer reviews, making it both informative and visually
+                                            appealing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Product Detail description -->
+                    <tr>
+                        <td>
+                            <div class="left">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="./products/product1.html" target="_blank">
+                                            <img src="../images/productDetail.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="./products/product1.html">
+                                            <h6>Product Details Page</h6>
+                                        </a>
+                                        <p>
+                                            Our product detail page design is inspired by the detailed and engaging
+                                            approach of the Gurkha Watch
+                                            product detail pages. We admire their focus on showcasing the craftsmanship
+                                            and unique features of
+                                            each watch, coupled with a storytelling element that highlights the brand's
+                                            heritage and values.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td>
+                            <div class="right">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="https://www.gurkhawatch.com/product/g200-silver-edition/"
+                                            target="_blank">
+                                            <img src="../images/productdetailsreference.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="https://www.gurkhawatch.com/product/g200-silver-edition/">
+                                            <h6>Gurkha Watch Website</h6>
+                                        </a>
+                                        <p>
+                                            This page likely provides in-depth details about the watch's craftsmanship,
+                                            materials used,
+                                            and the brand's history. It emphasizes the unique features of Gurkha
+                                            watches,
+                                            highlighting their heritage and the values they represent.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Footer description -->
+                    <tr>
+                        <td>
+                            <div class="left">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="" target="_blank">
+                                            <img src="../images/footer.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="">
+                                            <h6>Footer</h6>
+                                        </a>
+                                        <p>
+                                            Both websites exhibit a shared minimalist aesthetic in their footer designs.
+                                            This approach prioritizes clarity and conciseness, ensuring essential
+                                            information remains readily accessible while avoiding clutter. The use of
+                                            clean lines, ample white space, and a consistent font style contributes to a
+                                            streamlined and professional look and feel.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="right">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="https://www.gurkhabde.com/" target="_blank">
+                                            <img src="../images/footerReference.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="https://www.gurkhabde.com/">
+                                            <h6>Gurkhabde Website Footer</h6>
+                                        </a>
+                                        <p>
+                                            Furthermore, both footers demonstrate a focus on user experience. Key
+                                            information, such as copyright notices, privacy policies, contact details,
+                                            and social media links, is prominently displayed and easily navigable. This
+                                            shared emphasis on user-friendliness enhances the overall website experience
+                                            and fosters trust with visitors.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Home page description -->
+                    <tr>
+                        <td>
+                            <div class="left">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="../index.html" target="_blank">
+                                            <img src="../images/home.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="../index.html">
+                                            <h6>Home page design</h6>
+                                        </a>
+                                        <p>
+                                            Our website's design draws inspiration from the Gurkha Watch homepage. We
+                                            admired their minimalist approach, which effectively showcases their unique
+                                            timepieces while subtly highlighting Nepalese culture, bravery, and
+                                            craftsmanship. This reference aims to create a similar aesthetic that is
+                                            both modern and culturally resonant
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="right">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="https://www.gurkhawatch.com/" target="_blank">
+                                            <img src="../images/homeReference.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="https://www.gurkhawatch.com/">
+                                            <h6>Gurkha Watch Website</h6>
+                                        </a>
+                                        <p>
+                                            This is the homepage for the Gurkha Watch website, likely focusing on
+                                            their specific watch collection. which focuses on military grade watch and
+                                            the design is light but modernized.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Blog page description -->
+                    <tr>
+                        <td>
+                            <div class="left">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="../blog.html" target="_blank">
+                                            <img src="../images/blog.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="../blog.html">
+                                            <h6>Blog page design</h6>
+                                        </a>
+                                        <p>
+                                            I have taken a design reference from a blog page of a website to build my
+                                            college project website. The blog provided valuable insights into modern web
+                                            design trends, layout structures, and UI/UX best practices. By referring to
+                                            this page, I was able to implement an appealing visual style, a
+                                            well-organized navigation system, and responsive design techniques to ensure
+                                            a seamless user experience. The reference helped me choose the right color
+                                            schemes, typography, and interactive elements that enhance both the
+                                            aesthetics and functionality of my website.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <div class="right">
+                                <div class="card">
+                                    <div class="img-container">
+                                        <a href="https://annapurnabiking.io/blog/" target="_blank">
+                                            <img src="../images/blogReference.png" />
+                                        </a>
+                                    </div>
+                                    <div class="text-container">
+                                        <a href="https://annapurnabiking.io/blog/">
+                                            <h6>Annapurna Bike Website</h6>
+                                        </a>
+                                        <p>
+                                            The referenced blog page focuses on key aspects of web design, such as
+                                            user-friendly layouts, mobile responsiveness, and effective content
+                                            presentation. It provides detailed explanations, examples, and best
+                                            practices for creating visually engaging and functional websites. The page
+                                            also discusses the importance of accessibility and performance optimization,
+                                            ensuring that websites load efficiently and cater to a wide audience. With
+                                            its structured content and practical insights, this blog page served as a
+                                            crucial guide in shaping my project’s design.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div>
+                <img src="../images/footerlogo.png" width="150px" height="100px">
+                <h1>Gurkha Rifle Watches</h1><br>
+            </div>
+
+            <ul class="footer_nav">
+                <li>
+                    <h3>Menu</h3>
+                </li>
+                <hr width="100px">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="./products.html">Product</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./research.html">Research</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+            <p style="max-width: 40%; text-align: center; line-height: 2;">The Gurkha Rifle Watch collection embodies
+                the resilience, precision, and legacy of the legendary Gurkha soldiers. Each timepiece is a tribute to
+                their bravery, crafted with meticulous attention to detail and built to withstand the toughest
+                conditions.</p>
+        </div>
+        <h3 class="copyright">&copy; Gurkha Rifle Watch</h3>
+    </footer>
+
+</body>
+
+</html> 

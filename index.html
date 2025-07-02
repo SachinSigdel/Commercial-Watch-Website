@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="Gurkha Rifle Watch" description="E-commerce watch website">
+  <meta name="Author" description="Santosh Mukhiya">
+<title>Gurkha Rifle Watch</title>
+<link rel="stylesheet" href="./css/style.css">
+<style>
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #EAEAEA;
+}
+
+/* Content layout */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  flex: 1;
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+  padding: 20px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  line-height: 1.6;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  flex: 1;
+  max-width: 500px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  vertical-align: middle;
+  transition: transform 0.5s;
+}
+
+.text {
+  text-align: center;
+}
+
+.featured_heading {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.viewall {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h3>Gurkha Rifle Watch</h3>
+</header>
+
+<nav>
+  <div class="logo">
+    <img src="./images/logo.png" alt="Gurkha Khukuri Logo" height="200">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="./html/products.html">Product</a></li>
+    <li><a href="./html/blog.html">Blog</a></li>
+    <li><a href="./html/research.html">Research</a></li>
+    <li><a href="./html/about.html">About Us</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="intro">
+    <h1>Welcome to Gurkha Rifle Watch</h1>
+    <p>Explore our exquisite collection of watches inspired by the timeless legacy of Gurkha heritage. Crafted with precision, designed for excellence.</p>
+  </div>
+  
+  <div class="slideshow-container">
+    <div class="mySlides" id="slider">
+      <img src="./images/pic1.jpg" alt="Watch Image 1">
+      <div class="text">Elegant Design</div>
+    </div>
+    <div class="mySlides">
+      <img src="./images/pic2.jpeg" alt="Watch Image 2">
+      <div class="text">Timeless Precision</div>
+    </div>
+    <div class="mySlides">
+      <img src="./images/pic4.jpg" alt="Watch Image 3">
+      <div class="text">Inspired by Heritage</div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container" style="display: block;">
+    <div class="featured_heading">
+        <h1>Featured Collection</h1>
+        <a href="./html/products.html"> <button class="viewall">View All</button></a>
+    </div>
+<table style="display: flex; justify-content: space-evenly; margin-top: 30px;">
+  <tr align="center">
+      <td class="box">
+          <img src="./images/product5.jpeg" alt="Product Iamge" width="300px" height="300px">
+          <a href="./html/products/product5.html" class="read-more">View Details</a>
+          <p>Regiment Precision</p>
+          <p>Rs.6000</p>
+      </td>
+      <td class="box">
+          <img src="./images/product6.jpeg" alt="Product Iamge" width="300px" height="300px">
+          <a href="./html/products/product6.html" class="read-more">View Details</a>
+          <p>Highlander Watch</p>
+          <p>Rs.8000</p>
+      </td>
+      <td class="box">
+          <img src="./images/product18.jpg" alt="Product Iamge" width="300px" height="300px">
+          <a href="./html/products/product7.html" class="read-more">View Details</a>
+          <p>Brigade Heritage</p>
+          <p><s>Rs.15000</s> Rs.7000</p>
+      </td>
+  </tr>  
+</table>
+</div>
+
+<div class="container" style="display: block;">
+<h1 style="text-align: center; margin: 50px 0;">About Us</h1>
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center;">
+    <p style="max-width: 50%; padding: 20px; line-height: 2;">
+        Welcome to Gurkha Rifle Watches, where craftsmanship and tradition unite. Drawing inspiration from the legendary Gurkha Rifles, renowned for their unmatched bravery and discipline, our timepieces reflect the essence of strength, perseverance, and adventure. Designed with precision and built with premium materials, each watch promises durability and top-notch performance. Whether you’re embarking on an epic journey or going about your daily routine, our watches honor the legacy of the Gurkha soldiers. Experience excellence in every moment with a timepiece crafted for those who demand nothing less.<br>
+        <a href="./html/about.html"> <button class="viewall" style="margin-top: 20px;">Read-more</button></a>
+    </p>
+<div>
+    <img src="./images/about-us.png" alt="About us image." width="400px" height="400px">
+</div>
+
+</div>
+</div>
+
+<div class="container" style="display: block;">
+  <div class="featured_heading">
+    <h1>Read our blogs</h1>
+    <a href="./html/blog.html"> <button class="viewall">View All</button></a>
+</div>
+<div class="container" style="display: flex; align-items: center;">
+  <div style="display: block;">
+    <h3 style="text-align: center;">About Watch technology</h3>
+    <p style=" padding: 20px; line-height: 2;">
+      Watches have always been celebrated as masterpieces of precision and artistry. In today’s fast-paced world, however, they’ve evolved into more than just timekeeping tools – they are now cutting-edge devices that seamlessly integrate tradition with technology. At Gurkha Rifle Watch, we are passionate about combining these elements to create watches that stand out in both function and design..<br>
+          <a href="./html/blogs/blog1.html"> <button class="viewall" style="margin-top: 20px;">Read-more</button></a>
+      </p>
+  </div>
+  <img src="./images/blog1.jpg" width="600px" height="300px">
+</div>
+  </div>
+
+
+<footer>
+    <div class="footer">
+        <div>
+            <img src="./images/footerlogo.png" width="150px" height="100px">
+            <h1>Gurkha Rifle Watches</h1><br>
+        </div>
+            
+        <ul class="footer_nav">
+          <li><h3>Menu</h3></li><hr width="100px">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./html/products.html">Product</a></li>
+          <li><a href="./html/blog.html">Blog</a></li>
+          <li><a href="./html/research.html">Research</a></li>
+          <li><a href="./html/about.html">About Us</a></li>
+        </ul>
+            <p style="max-width: 40%; text-align: center; line-height: 2;">The Gurkha Rifle Watch collection embodies the resilience, precision, and legacy of the legendary Gurkha soldiers. Each timepiece is a tribute to their bravery, crafted with meticulous attention to detail and built to withstand the toughest conditions.</p>
+    </div>
+    <h3 class="copyright">&copy; Gurkha Rifle Watch</h3>
+</footer>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

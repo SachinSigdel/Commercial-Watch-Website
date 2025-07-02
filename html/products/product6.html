@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Gurkha Rifle Watch" description="E-commerce watch website">
+    <meta name="keywords" content="Gurkha Watch">
+    <meta name="Author" description="Sachin Sigdel">
+    <title>product6</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- heading start -->
+    <header>
+        <h3>Gurkha Rifle Watch</h3>
+      </header>
+      <nav>
+        <div class="logo">
+          <img src="../../images/logo.png" alt="Gurkha Khukuri Logo" height="200">
+        </div>
+        <!-- navigation start -->
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../products.html">Product</a></li>
+            <li><a href="../blog.html">Blog</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../about.html">About Us</a></li>
+          </ul>
+          <!-- navigation end -->
+          <div class="cart-container">
+            <img src="../../images/navCart.png" width="30px" height="30px" class="navCart">
+            <span class="cart-counter" id="cartCounter">0</span>
+        </div>
+      </nav>
+      <!-- heading end -->
+       <!-- product description with an image -->
+    <section class="product flex"><!-- flex is used here to align image and text side by side-->
+        <img src="../../images/product6.jpeg" width="500px" height="500px">
+        <div style="display: block;"><!-- block is used to diplay the text in a block-->
+            <h1>Highlander Watch</h1><hr style="width: 70%;float: right;"><br>
+            <p class="p_desc size">Rs. 8000</p><br>
+            <p class="p_desc">Inspired by the Gurkhas’ mountainous origins, the Highlander Watch is built to endure extreme conditions while maintaining timeless style.</p><br>
+            <div style="padding-left: 20px; font-size: 20px;">
+                <h4>Key Features:</h4>
+                <ol style="display: block; list-style-type: disc; margin-left: 30px;" >
+                    <li>Shockproof and water-resistant up to 150m.</li>
+                    <li>Durable nylon strap with reinforced stitching.</li>
+                    <li>Large, easy-to-read dial with bold numerals.</li>
+                </ol>
+            </div><br>
+            <div class="counter">
+                    <button id="decrease" onclick="decreaseAmount()">-</button>
+                    <span id="counter">1</span>
+                    <button id="increase" onclick="increaseAmount();">+</button>
+                    <button class="cart" id="addToCart">Add to cart <img src="../../images/cart.png"></button>
+            </div>
+        </div>
+    </section>
+    <!-- product description end-->
+    <!-- customer reviews start -->
+    <section class="container">
+        <!-- hardcoded  reviews sample of three demo customers-->
+        <h1 style="text-align: center; padding: 5px;">Consumer Insights</h1>
+       <div style="display: flex;">
+        <div class="customer_reviews">
+            <div style="display: flex;align-items: center; gap: 10px;">
+                <img src="../../images/profile-user.png" alt="profile">
+                <h3>Arjun K.</h3>
+            </div>
+            <span>★ ★ ★ ★ ★</span><br>
+            <i>Built like a tank! I’ve taken this on hikes, and it handles tough conditions like a pro.</i>
+        </div>
+        <div class="customer_reviews">
+            <div style="display: flex;align-items: center; gap: 10px;">
+                <img src="../../images/profile-user.png" alt="profile">
+                <h3>Ella J.</h3>
+            </div>
+            <span>★ ★ ★ ★ ☆</span><br>
+            <i>Sturdy and built for adventure. It’s great for hikes and rough conditions. A slightly softer strap would make it perfect.</i>
+        </div>
+        <div class="customer_reviews">
+            <div style="display: flex;align-items: center; gap: 10px;">
+                <img src="../../images/profile-user.png" alt="profile">
+                <h3>Meghan D.</h3>
+            </div>
+            <span>★ ★ ★ ☆ ☆</span><br>
+            <i>A sturdy watch, but I wish the strap was more comfortable for extended wear.</i>
+        </div>
+       </div>
+    </section>
+    <!-- customer reviews end-->
+    <br><br>
+    <br>
+    <!-- section for more related products-->
+    <h1 style="text-align: center;">Related products</h1>
+    <section>
+        <!-- code reused from products page-->
+        <table style="display: flex; justify-content: space-evenly;">
+            <tr align="center">
+                <td class="box">
+                    <img src="../../images/product14.jpg" alt="Product Iamge" width="300px" height="300px">
+                    <a href="./product1.html" class="read-more">View Details</a>
+                    <p>Gurkha Commander</p>
+                    <p><s>Rs.5000</s> Rs.2500</p>
+                </td>
+                <td class="box">
+                    <img src="../../images/product15.jpg" alt="Product Iamge" width="300px" height="300px">
+                    <a href="./product2.html" class="read-more">View Details</a>
+                    <p>Khukuri Timepiece</p>
+                    <p><s>Rs.7000</s> Rs. 5000</p>
+                </td>
+                <td class="box">
+                    <img src="../../images/product16.jpg" alt="Product Iamge" width="300px" height="300px">
+                    <a href="./product3.html" class="read-more">View Details</a>
+                    <p>Rifleman Chorograph</p>
+                    <p>Rs.10000</p>
+                </td>
+                <td class="box">
+                    <img src="../../images/product17.jpg" alt="Product Iamge" width="300px" height="300px">
+                    <a href="./product4.html" class="read-more">View Details</a>
+                    <p>Gurkha Elite Series</p>
+                    <p>Rs.9000</p>
+                </td>
+            </tr> 
+        </table>
+    </section>
+    <!-- related products section end-->
+
+    <!--footer start-->
+    <footer>
+        <div class="footer">
+            <div>
+                <img src="../../images/footerlogo.png" width="150px" height="100px">
+                <h1>Gurkha Rifle Watches</h1><br>
+                
+            </div>
+                
+            <ul class="footer_nav">
+                <li><h3>Menu</h3></li><hr width="100px">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">Product</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../about.html">About Us</a></li>
+              </ul>
+                <p style="max-width: 40%; text-align: center; line-height: 2;">The Gurkha Rifle Watch collection embodies the resilience, precision, and legacy of the legendary Gurkha soldiers. Each timepiece is a tribute to their bravery, crafted with meticulous attention to detail and built to withstand the toughest conditions.</p>
+        </div>
+        <h3 class="copyright">&copy; Gurkha Rifle Watch</h3>
+    </footer>
+    <!-- footer end-->
+
+    <!-- external JS used for counter and add to cart functionality-->
+    <script src="../../JavaScript/index.js">
+    </script>
+</body>
+</html>

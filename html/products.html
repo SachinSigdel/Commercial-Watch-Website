@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>products</title>
+    <meta name="Gurkha Rifle Watch" description="E-commerce watch website">
+    <meta name="keywords" content="Gurkha Watch">
+    <meta name="Author" description="Sachin Sigdel">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        hr {
+            margin: 10px;
+        }
+
+        .search {
+            border-radius: 50px;
+            padding: 10px;
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        .test {
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+        }
+
+        .featured {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        img{
+            object-fit: cover;
+            object-position: center; /* aligning the img at center*/
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- website title-->
+    <header>
+        <h3>Gurkha Rifle Watch</h3>
+    </header>
+      
+    <nav>
+        <div class="logo">
+          <img src="../images/logo.png" alt="Gurkha Khukuri Logo" height="200">
+        </div>
+        <!--header navigation bar-->
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../html/products.html">Product</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./research.html">Research</a></li>
+          <li><a href="./about.html">About Us</a></li>
+        </ul>
+      </nav>
+    
+    <section class="products_body">
+        <div>
+            <!-- Heading for the products page-->
+            <div class="products_desc">
+                <h1>Gurkha Rifle Watches</h1>
+                <p class="featured">Timeless Precision, Inspired by Bravery.</p>
+            </div>
+            <div class="test">
+                <p style="font-size: 20px;">Latest Collection</p>
+                <input type="text" placeholder="Search.." class="search"> <!-- search bar, just the bar, it doesn't work yet-->
+                <!-- had problem with br tag while using flex, and justify-content: space between -->
+            </div>
+            <hr>
+            <!-- Table tag is used here to display different products, 4 in a row with 2 rows-->
+            <table class="products">
+                <!--row 1-->
+                <tr align="center">
+                    <!-- class box is given to all individual products to design at the same time-->
+                    <td class="box">
+                        <img src="../images/product14.jpg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product1.html" class="read-more">View Details</a>
+                        <p>Gurkha Commander</p>
+                        <p><s>Rs. 5000</s> Rs. 2500</p><!-- price in s tag is original price and price outside the s tag is discounted price-->
+                    </td>
+                    <td class="box">
+                        <img src="../images/product15.jpg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product2.html" class="read-more">View Details</a>
+                        <p>Khukuri Timepiece</p>
+                        <p><s>Rs. 7000</s> Rs. 5000</p><!-- price in s tag is original price and price outside the s tag is discounted price-->
+                    </td>
+                    <td class="box">
+                        <img src="../images/product16.jpg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product3.html" class="read-more">View Details</a>
+                        <p>Rifleman Chorograph</p>
+                        <p>Rs. 10000</p>
+                    </td>
+                    <td class="box">
+                        <img src="../images/product17.jpg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product4.html" class="read-more">View Details</a>
+                        <p>Gurkha Elite Series</p>
+                        <p>Rs. 9000</p>
+                    </td>
+                </tr>
+                <!--row 2-->
+                <tr align="center">
+                    <td class="box">
+                        <img src="../images/product5.jpeg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product5.html" class="read-more">View Details</a>
+                        <p>Regiment Precision</p>
+                        <p>Rs. 6000</p>
+                    </td>
+                    <td class="box">
+                        <img src="../images/product6.jpeg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product6.html" class="read-more">View Details</a>
+                        <p>Highlander Watch</p>
+                        <p>Rs. 8000</p>
+                    </td>
+                    <td class="box">
+                        <img src="../images/product18.jpg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product7.html" class="read-more">View Details</a>
+                        <p>Brigade Heritage</p>
+                        <p><s>Rs. 15000</s> Rs. 7000</p><!-- price in s tag is original price and price outside the s tag is discounted price-->
+                    </td>
+                    <td class="box">
+                        <img src="../images/product9.jpeg" alt="Product Iamge" width="300px" height="300px">
+                        <a href="./products/product8.html" class="read-more">View Details</a>
+                        <p>Gurkha Sentinel</p>
+                        <p>Rs. 7500</p>
+                    </td>
+                </tr>    
+            </table>
+        </div>
+    </section>
+    <!-- footer has 3 sections-->
+    <footer>
+        <div class="footer">
+            <!-- logo and title of the website-->
+            <div>
+                <img src="../images/footerlogo.png" width="150px" height="100px">
+                <h1>Gurkha Rifle Watches</h1><br>
+            </div>
+                
+            <!-- footer menu-->
+            <ul class="footer_nav">
+                <li><h3>Menu</h3></li><hr width="100px">
+                <li><a href=" ../index.html">Home</a></li>
+                <li><a href="./products.html">Product</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./research.html">Research</a></li>
+                <li><a href="./about.html">About Us</a></li>
+              </ul>
+                  <p style="max-width: 40%; text-align: center; line-height: 2;">The Gurkha Rifle Watch collection embodies the resilience, precision, and legacy of the legendary Gurkha soldiers. Each timepiece is a tribute to their bravery, crafted with meticulous attention to detail and built to withstand the toughest conditions.</p>
+        </div>
+        <!--copyright-->
+        <h3 class="copyright">&copy; Gurkha Rifle Watch</h3>
+    </footer>
+</body>
+</html>
